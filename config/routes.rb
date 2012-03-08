@@ -1,9 +1,13 @@
 Rockpaperscissors::Application.routes.draw do
-  get "pages/index"
-	
-  get "pages/throw"
 
-  get "pages/stats"
+	get "/index", to: "pages#index"
+	
+	get "/", to: "pages#index"
+	
+	get "/throw/:type", to: "pages#throw"
+
+	get "/stats", to: "pages#stats"
+ 
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

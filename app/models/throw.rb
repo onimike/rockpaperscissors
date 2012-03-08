@@ -1,0 +1,2 @@
+class Throw
+end

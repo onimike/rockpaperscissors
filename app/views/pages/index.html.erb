@@ -1,2 +1,6 @@
-<h1>index</h1>
-<p>This is the index page for rock paper scissors on rails!</p>
+<h1><%=@title%></h1>
+<p><%=@message%></p>
+<p><%= link_to "Throw Rock", '/throw/rock' %></p>
+<p><%= link_to "Throw Paper", '/throw/paper' %></p>
+<p><%= link_to "Throw Scissors", '/throw/scissors' %></p>
+<p><%= link_to "View Stats", '/stats' %></p>

@@ -1,2 +1,5 @@
-<h1>Pages#stats</h1>
-<p>Find me in app/views/pages/stats.html.erb</p>
+<h1><%=@title%></h1>
+<p>The player has won <%= @player_wins %> times.</p>
+<p>The computer has won <%= @computer_wins %> times.</p>
+<p>There have been <%= @draw_games %> draws.</p>
+<p><%= link_to "Go Back", '/' %></p>
