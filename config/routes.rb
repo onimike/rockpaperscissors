@@ -1,12 +1,15 @@
 Rockpaperscissors::Application.routes.draw do
 
 	get "/index", to: "pages#index"
-	
 	get "/", to: "pages#index"
 	
 	get "/throw/:type", to: "pages#throw"
 
 	get "/stats", to: "pages#stats"
+
+	get "/stats/clear", to: "pages#clear"
+	
+	get "*bad_path" => redirect("/")
  
 
   # The priority is based upon order of creation:

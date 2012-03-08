@@ -38,4 +38,11 @@ class PagesController < ApplicationController
 	@games_played = session[:count].to_i
 	
   end
+  
+  def clear
+	@title = "Clear Stats"
+	@message = "Stats were cleared!"
+	reset_session
+  end
+  
 end
