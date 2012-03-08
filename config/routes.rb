@@ -1,6 +1,6 @@
 Rockpaperscissors::Application.routes.draw do
   get "pages/index"
-
+	
   get "pages/throw"
 
   get "pages/stats"
